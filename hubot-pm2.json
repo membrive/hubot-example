@@ -1,0 +1,22 @@
+{
+	"apps": [
+	{
+		"name": "hubot",
+		"cwd": "/opt/hubot",
+		"script": "bin/hubot",
+		"args": "--adapter slack",
+		"watch": ["package.json", "external-scripts.json", "scripts/", "hubot-scripts.json"],
+		"exec_interpreter": "bash",
+		"log_date_format": "YYYY-MM-DD HH:mm:ss SSS",
+		"port": "8080",
+		"env": {
+			"HUBOT_SLACK_TOKEN": "",
+			"HUBOT_JENKINS_URL": "https://jenkins.tld",
+			"HUBOT_JENKINS_AUTH": "user:password",
+			"PORT": "8080",
+			"HUBOT_NAGIOS_URL": "https://nagios.tld",
+			"HUBOT_NAGIOS_AUTH": "user:password",
+			"HUBOT_LOG_LEVEL": "debug"
+		}
+	}]
+}
